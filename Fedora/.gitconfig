@@ -1,0 +1,37 @@
+[user]
+	name = pyer
+	email = pierre.bazonnard@gmail.com
+[credential]
+	helper = store
+[alias]
+  sl = stash list
+  sa = stash apply
+  ss = stash save
+  st = status
+
+  s = status --branch --short
+  w = whatchanged
+
+  ll = log --name-only --oneline
+  la = log --name-only --oneline --author=pba
+
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+  lu = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
+  lua = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  lud = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --simplify-by-decoration
+  luda = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --simplify-by-decoration --all
+
+[pack]
+  windowMemory = 256m
+
+[core]
+  autocrlf = false
+  editor = vim
+
+[push]
+  default = upstream
+
+[http]
+  sslverify = false
